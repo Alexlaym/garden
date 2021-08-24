@@ -1,0 +1,166 @@
+
+<div class="fv form-validate-ajax">
+	<form action="">
+		<div class="fv__heading">Форма валидации</div>
+		<div class="fv__error">Ошибка</div>
+		<div class="fv__block required--input required">
+			<label><span>
+					Текстовое поле ввода:</span>
+				<input type="text" data-length="7"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required--input num--inset required">
+			<label><span>Цифровое поле ввода</span>:
+				<input type="text" data-length="1"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required--password required">
+			<div class="password-first">
+				<label><span>Введите пароль:</span>:
+					<input type="password" required="required" minlength="4" maxlength="8"/>
+					<div class="password-control"></div>
+				</label>
+				<div class="fv__block-error">Поле заполнено некорректно!</div>
+				<div class="fv__block-succes">Поле заполнено корректно!</div>
+				<div class="fv__block-not-equally">Пароли не совпадают!</div>
+			</div>
+			<div class="password-second" style="display: none;">
+				<label><span>Повторите пароль:</span>:
+					<input type="password" required="required" minlength="4" maxlength="8"/>
+					<div class="password-control"></div>
+				</label>
+				<div class="fv__block-error">Поле заполнено некорректно!</div>
+				<div class="fv__block-succes">Поле заполнено корректно!</div>
+				<div class="fv__block-not-equally">Пароли не совпадают!</div>
+			</div>
+		</div>
+		<div class="fv__block input--mask required--date required">
+			<label><span>Цифровое поле ввода (дата рождения)</span>:
+				<input class="date-picker" type="text" data-mask="99.99.9999" data-lang="ru" data-src="./img/svg/post.svg" data-template="dd.mm.yy"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block input--mask required--date required">
+			<label><span>Цифровое поле ввода (дата рождения)</span>:
+				<input class="date-picker" type="text" data-mask="99.99.9999" data-lang="ru" data-src="./img/svg/post.svg" data-template="dd.mm.yy"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block input--mask required">
+			<label><span>Цифровое поле ввода (телефон)</span>:
+				<input type="tel" data-mask="+375 (99) 999-99-99" data-placeholder="+375 (__) ___-__-__" placeholder="+375 (__) ___-__-__"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block input--mask">
+			<label>Телефон
+				<div class="input-country">
+					<select class="styler">
+						<option data-mask="+375 (99) 999-99-99" value="+375 (99) 999-99-99" data-placeholder="+375 (__) ___-__-__" data-img="./img/svg/belarus.svg">+375</option>
+						<option data-mask="+7 (999) 999-99-99" value="+7 (999) 999-99-99" data-placeholder="+7 (___) ___-__-__" data-img="./img/svg/russia.svg">+7</option>
+					</select>
+					<input type="tel" data-mask="+375 (99) 999-99-99" data-placeholder="+375 (__) ___-__-__" placeholder="+375 (__) ___-__-__"/>
+				</div>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required--email required">
+			<label><span>Текстовое поле ввода (email)</span>:
+				<input type="email"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block email-input-control">
+			<label><span>Текстовое поле ввода (email, динамический 'required')</span>:
+				<input type="email"/>
+			</label>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block radio--required"><span>Группа раидокнопок:</span>
+			<label>
+				<input class="styler" type="radio" name="radio1"/><span>Радиокнопка</span>
+			</label>
+			<label>
+				<input class="styler" type="radio" name="radio1"/><span>Радиокнопка</span>
+			</label>
+			<label>
+				<input class="styler" type="radio" name="radio1"/><span>Радиокнопка</span>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required--check"><span>Группа одиночных чекбоксов:</span>
+			<label>
+				<input class="styler" type="checkbox"/><span>Одиночный чекбокс</span>
+			</label>
+			<label>
+				<input class="styler" type="checkbox"/><span>Одиночный чекбокс</span>
+			</label>
+			<label>
+				<input class="styler" type="checkbox"/><span>Одиночный чекбокс</span>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required required--select">
+			<label><span>Выпадающий список:</span><br/>
+				<select class="styler">
+					<option disabled="disabled" selected="selected" value="Not selected">Не выбрано</option>
+					<option value="1">Опция 1</option>
+					<option value="2">Опция 2</option>
+					<option value="3">Опция 3</option>
+					<option value="4">Опция 4</option>
+				</select>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block check-more"><span>Группа чекбоксов:</span>
+			<label>
+				<input class="styler" type="checkbox"/><span>Групповой чекбокс</span>
+			</label>
+			<label>
+				<input class="styler" type="checkbox"/><span>Групповой чекбокс</span>
+			</label>
+			<label>
+				<input class="styler" type="checkbox"/><span>Групповой чекбокс</span>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required--textarea">
+			<label><span>Поле для ввода текста</span><br/>
+				<textarea name="" cols="30" rows="10"></textarea>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required--file required">
+			<label><span>Прикрепить файл (один)</span>:<br/>
+				<input class="styler" type="file"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+		</div>
+		<div class="fv__block required--file--multiple required" data-max="5">
+			<label><span>Прикрепить файл (несколько)</span>:<br/>
+				<input class="styler" type="file" data-number="" data-placeholder="Выберите файл" multiple="multiple"/>
+			</label>
+			<div class="fv__block-error">Поле заполнено некорректно!</div>
+			<div class="fv__block-succes">Поле заполнено корректно!</div>
+			<div class="input-file-list"></div>
+		</div>
+		<div class="fv__block fv__block-sbmt required">
+			<input class="required--sbmt" type="submit" value="Отправить"/>
+		</div>
+	</form>
+</div>
